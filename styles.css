@@ -1,0 +1,32 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 200% 200%;
+  animation: live-background 10s ease infinite;
+}
+
+@keyframes live-background {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+
+.glassmorphism {
+    background-color: rgba(255, 255, 255, 0.203);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.282));
+}
